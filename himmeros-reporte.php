@@ -20,6 +20,23 @@
 
 defined( 'ABSPATH' ) || exit;
 
+// Configuro la clase que permite actualizar desde GitHub
+
+// Incluye la librería (ajusta la ruta si es necesario)
+require 'includes/plugin-update-checker/plugin-update-checker.php';
+
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+
+// Inicializa el comprobador
+$myUpdateChecker = PucFactory::buildUpdateChecker(
+    'https://github.com/Himmeros/himmeros-reportes/', // URL de tu repo en GitHub
+    __FILE__,                                          // Referencia a este archivo
+    'himmeros-reportes'                                // Slug del plugin (debe coincidir con la carpeta)
+);
+
+// Opcional: Si tu repositorio es PRIVADO, necesitarás esto:
+// $myUpdateChecker->setAuthentication('TU_TOKEN_DE_GITHUB');
+
 class HimmerosReportes {
 
     public function __construct() {
