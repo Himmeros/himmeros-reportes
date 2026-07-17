@@ -1,0 +1,74 @@
+/* Contenedor principal */
+.himmeros-reporte-frontend {
+    margin: 20px 0;
+    font-family: sans-serif;
+}
+
+.himmeros-titulo {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Tabla adaptativa */
+.himmeros-tabla-contenedor {
+    overflow-x: auto;
+}
+
+.himmeros-tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 0.95em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.himmeros-tabla th, 
+.himmeros-tabla td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.himmeros-tabla th {
+    background-color: #0073aa; /* Azul clásico de WordPress */
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.himmeros-tabla tbody tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
+
+.himmeros-tabla tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.sin-registros {
+    text-align: center !important;
+    color: #888;
+}
+
+/* Soporte Móvil */
+@media screen and (max-width: 600px) {
+    .himmeros-tabla thead {
+        display: none;
+    }
+    .himmeros-tabla tr {
+        display: block;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+    }
+    .himmeros-tabla td {
+        display: block;
+        text-align: right;
+        font-size: 0.8em;
+        border-bottom: 1px dashed #ccc;
+    }
+    .himmeros-tabla td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
