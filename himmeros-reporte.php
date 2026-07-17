@@ -5,7 +5,7 @@
  * Plugin Name:       Himmeros Reporte
  * Plugin URI:        https://himmeros.xyz
  * Description:       Reportes de servicios de Proyectos Himmeros
- * Version:           0.0.1
+ * Version:           0.0.2
  *
  * Author:            Proyectos Himmeros
  * Author URI:        https://himmeros.xyz
