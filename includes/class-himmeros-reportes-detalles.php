@@ -22,11 +22,13 @@ class HimmerosReportesDetalles {
             
             <div class="caja-reporte">
                 <h3>Detalles del Sistema de Reportes</h3>
-                <p>Bienvenido al módulo principal. Esta vista ahora está siendo generada desde su propia clase independiente.</p>
+                <h4>Implementado para <b>Proyectos Himmeros</b></h4>
+                <hr/>
+                <p>La idea es llevar un registro detallado del servicio proporcionado a los clientes .</p>
                 
                 <div class="detalles-grid">
                     <p><strong>Estado del sistema:</strong> Activo</p>
-                    <p><strong>Versión:</strong> 0.0.1</p>
+                    <p><strong>Versión:</strong> 0.0.2</p>
                 </div>
             </div>
         </div>
